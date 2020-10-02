@@ -1,1 +1,1 @@
-web: gunicorn restorante:server
+web: gunicorn pruebaRestorante.wsgi 

@@ -22,7 +22,8 @@ from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(r'principal/', include(('principal.urls', 'principal'), namespace ='principal')),
+    path(r'', include(('principal.urls', 'principal'), namespace ='principal')),
+    path(r'', include('principal.urls')),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

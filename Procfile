@@ -1,1 +1,1 @@
-web: gunicorn restorante.wsgi 
+web: gunicorn restorante:server
